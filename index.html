@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<head>
+    <title>Ruffle/Flash XYU demo</title>
+</head>
+<body>
+<center><div id="container"></div></center>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.load("project.swf");
+    });
+</script>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</body>
