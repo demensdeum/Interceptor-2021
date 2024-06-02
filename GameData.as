@@ -4,7 +4,7 @@
 	
 	function initialGameData() {
 		status = 100;
-		money = 1000;
+		money = 100;
 	}
 
 }
